@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #363636;
+}
+.container{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7%;
+}
+
+h1{
+    font-size: 30px;
+}
+
+/*Escolha entre pomodoro ou pausa*/
+.choice{
+    display: flex;
+}
+.pomodoro{
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #eb4545;
+    padding: 5px;
+    box-shadow: -5px 0px 5px 4px #33ba33;
+}
+.pomodoro:active{
+    box-shadow: inset 0px 5px 4px #33ba33;
+    font-size: 0.9rem;
+}
+.break{
+    color: white;
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 5px 0px 5px 4px #3586a3;
+    background-color: #0b1153;
+}
+.break:active{
+    box-shadow: inset 0px 5px 4px #3586a3;
+    font-size: 1.02rem;
+}
+
+/*Contagem*/
+.circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 0px 10px 4px #33ba33;
+}
+.stopwatch{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #ce4320;
+    font-size: 50px;
+}
+
+/*Play/Pause*/
+span.material-symbols-outlined{
+    font-size: 50px;
+}
